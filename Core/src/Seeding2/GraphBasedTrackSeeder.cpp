@@ -968,7 +968,7 @@ bool GraphBasedTrackSeeder::checkZ0BitMask(const std::uint16_t z0BitMask,
   const float dz = z0 - minZ0;
   const std::int32_t z0BinIndex = static_cast<std::int32_t>(z0HistoCoeff * dz);
 
-  if (z0BinIndex >= 0){
+  if (z0BinIndex >= 0) {
     if (((z0BitMask >> z0BinIndex) & 1) != 0) {
       return true;
     }
